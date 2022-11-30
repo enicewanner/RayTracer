@@ -22,6 +22,7 @@ int main(int, char**)
 
 	}
 	
+
 	renderer.Shutdown();
 	return 0;	
 
