@@ -2,6 +2,7 @@
 #include "Canvas.h"
 #include "../Math/Ray.h"
 #include "../Objects/Sphere.h"
+#include "Camera.h"
 #include <SDL.h>
 
 class Object;
@@ -19,7 +20,7 @@ public:
 	void CopyCanvas(const Canvas& canvas);
 	void Present();
 
-	void Render(Canvas& canvas, Scene& scene);
+	void Render(Canvas& canvas, Scene& scene, Camera& camera);
 
 	friend class Canvas;
 
